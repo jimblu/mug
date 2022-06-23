@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mug.css">
+    <title>Mug</title>
+</head>
+<body style="width: 100vw;height: 100vh;display: flex;justify-content: center;align-items: center;">
+    <button id="play" style="border-radius: 50%;width: 150px;height: 150px;">PLAY</button>
+
+    <script>
+        let play = document.getElementById('play');
+        play.addEventListener('click', () => {
+            let vocale = new SpeechSynthesisUtterance()
+            vocale.text = "on s'en bat les couilles";
+            vocale.pitch = 1;
+            vocale.rate = 1;
+            vocale.volume = 1
+            speechSynthesis.speak(vocale);
+        })
+    </script>
+</body>
+</html>
