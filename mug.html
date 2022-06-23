@@ -13,7 +13,7 @@
     <script>
         //ballec
         let play = document.getElementById('play');
-        play.addEventListener('click', () => {
+        play.addEventListener('click', function() {
             let vocale = new SpeechSynthesisUtterance()
             vocale.text = "on s'en bat les couilles";
             vocale.pitch = 1;
